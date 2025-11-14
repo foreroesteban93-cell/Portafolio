@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio de Esteban</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Esteban Forero Deossa</h1>
+    <nav>
+      <a class="arriba" href="#sobre-mi">Sobre mí</a>
+      <a class="arriba" href="#proyectos">Proyectos</a>
+      <a class="arriba" href="#habilidades">Habilidades</a>
+      <a class="arriba" href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Hola, soy Esteban me gusta la tecnologia en general, la programacion y aspiro a graduarme de
+      Analisis y desarrollo de Software.
+    </p>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="project">
+      <h3>Proyecto 1</h3>
+      <p>Sacar otra sucursal de la papelería de mi padre.</p>
+    </div>
+    <div class="project">
+      <h3>Proyecto 2</h3>
+      <p>Graduarme de análisis y desarrollo de software.</p>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <div class="skill">Python</div>
+    <div class="skill">Bases de datos SQL</div>
+    <div class="skill">Curso básico de reparación de celulares</div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form onsubmit="event.preventDefault(); alert('Mensaje enviado');">
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo" required />
+      <textarea rows="4" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer id="footer">
+    <p>© 2025 Mi Portafolio</p>
+    <a target="_blank" href="http://youtube.com/@ESPNFans">YouTube</a>
+    <a target="_blank" href="http://youtube.com/@ESPNFans">FaceBook</a>
+    <a target="_blank" href="http://youtube.com/@ESPNFans">Instagram</a>
+
+  </footer>
+</body>
+</html>
