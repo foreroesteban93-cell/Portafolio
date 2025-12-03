@@ -8,19 +8,32 @@
 </head>
 <body>
   <header>
+
     <h1>Esteban Forero Deossa</h1>
     <nav>
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="hamburger">☰</label>
         <div class="nav-links">
           <a href="#inicio">Inicio</a>
-          <a href="#sobre">Sobre mí</a>
-          <a href="#metas">Metas</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#projects">Projectos</a>
           <a href="#intereses">Intereses</a>
           <a href="#contacto">Contacto</a>
         </div>
     </nav>
   </header>
+
+  <section id="inicio" class="presentacion">
+  <div class="presentacion-contenido">
+    <img src="imagen.jpg" alt="Foto de Esteban" class="presentacion-img">
+
+    <h2 class="presentacion-titulo">Hola, este es mi portafolio personal👋</h2>
+
+    <p class="presentacion-texto">
+      Estudiante de Analisis y Desarrollo de SoftWare en el SENA.
+    </p>
+  </div>
+</section>
 
   <section id="sobre-mi">
     <h2>Sobre mí</h2>
@@ -50,17 +63,93 @@
   </div>
 </section>
 
+<section id="intereses">
+  <h2>Intereses</h2>
 
-  <section id="habilidades">
-    <h2>Habilidades</h2>
-    <div class="skill">Python</div>
-    <div class="skill">Bases de datos SQL</div>
-    <div class="skill">Curso básico de reparación de celulares</div>
-  </section>
+  <div class="intereses-container">
+
+    <div class="interes">
+      <span class="emoji">🎨</span>
+      <p>Diseño web</p>
+    </div>
+
+    <div class="interes">
+      <span class="emoji">📱</span>
+      <p>Creacion de paginas responsive</p>
+    </div>
+    <div class="interes">
+      <span class="emoji">🐍</span>
+      <p>Profunzar Python</p>
+    </div>
+
+    <div class="interes">
+      <span class="emoji">🤖</span>
+      <p>IA y creacion de pronts</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="habilidades">
+  <h2>Mis habilidades</h2>
+
+  <div class="skills-list">
+
+    <div class="skill-row">
+      <div class="skill-label">
+        <span class="emoji">🐍</span>
+        <span class="name">Python</span>
+      </div>
+      <div class="skill-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+        <div class="skill-fill fill-python" style="width:60%;">
+          <span class="skill-percent">60%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-row">
+      <div class="skill-label">
+        <span class="emoji">🌐</span>
+        <span class="name">HTML / CSS</span>
+      </div>
+      <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+        <div class="skill-fill fill-html" style="width:70%;">
+          <span class="skill-percent">70%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-row">
+      <div class="skill-label">
+        <span class="emoji">📜</span>
+        <span class="name">JavaScript</span>
+      </div>
+      <div class="skill-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        <div class="skill-fill fill-js" style="width:50%;">
+          <span class="skill-percent">50%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-row">
+      <div class="skill-label">
+        <span class="emoji">🗄️</span>
+        <span class="name">SQL</span>
+      </div>
+      <div class="skill-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        <div class="skill-fill fill-sql" style="width:50%;">
+          <span class="skill-percent">50%</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
   <section id="contacto">
     <h2>Contacto</h2>
-    <form onsubmit="event.preventDefault(); alert('Mensaje enviado');">
+    <form action="https://formsubmit.co/foreroesteban93@gmail.com" method="POST">
       <input type="text" placeholder="Tu nombre" required />
       <input type="email" placeholder="Tu correo" required />
       <textarea rows="4" placeholder="Tu mensaje" required></textarea>
@@ -70,10 +159,22 @@
 
   <footer id="footer">
     <p>© 2025 Mi Portafolio</p>
-    <a target="_blank" href="http://youtube.com/@ESPNFans">YouTube</a>
-    <a target="_blank" href="http://youtube.com/@ESPNFans">FaceBook</a>
-    <a target="_blank" href="http://youtube.com/@ESPNFans">Instagram</a>
+    <a target="_blank" href="https://github.com/foreroesteban93-cell">GitHub</a>
+    <a target="_blank" href="https://www.facebook.com/share/1BQM2sosoZ/">FaceBook</a>
+    <a target="_blank" href="https://www.instagram.com/forero5511?igsh=MWhvaXdhZzFmc2N1cg==">Instagram</a>
 
   </footer>
+
+  <button id="btn-tema" class="arriba">Cambiar tema</button>
+
+<script>
+  const boton = document.getElementById("btn-tema");
+
+  boton.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+  });
+</script>
+
+
 </body>
 </html>
